@@ -1,2 +1,2 @@
 <?php
-    header("Location: ./site/trang-chinh/");
+    header("Location: ./site/gioi-thieu.php");

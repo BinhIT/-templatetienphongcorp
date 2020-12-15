@@ -40,3 +40,7 @@ aside {
     text-decoration: none;
     color: cadetblue;
 }
+
+input, button, textarea {
+    outline: 0px;
+}
