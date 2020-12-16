@@ -1,0 +1,270 @@
+/*---------------------GENERAL CSS---------------------*/
+@font-face {
+    font-family: font-main;
+    src: url(../font/open-san/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: open-regular;
+    src: url(../font/open-san/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: open-regular;
+    color: #444444;
+}
+
+a {
+    color: #5846f9;
+}
+
+a:hover {
+    color: #8577fb;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: font-main;
+}
+/*----------------------------------------------------------*/
+
+/*---------------------START CSS HEADER---------------------*/
+
+/*CSS DESKTOP-HEADER-TOP*/
+
+#header .desktop-header .desktop-header-top {
+    background: #2c394c;
+    display: flow-root;
+}
+
+#header .desktop-header .desktop-header-top .hdt-left-menu > a {
+    display: inline-block;
+    padding: 12px 0px 15px 0px;
+    margin-right: 15px;
+    color: #ffffff;
+    border-top: 3px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#header .desktop-header .desktop-header-top .hdt-left-menu > a:hover {
+    color: #11b5e6;
+    border-top: 3px solid #11b5e6;
+}
+
+#header .desktop-header .desktop-header-top .hdt-right-social > a {
+    display: inline-block;
+    padding: 12px 0px 15px 0px;
+    margin-right: 15px;
+    color: #ffffff;
+    border-top: 3px solid transparent;
+}
+
+#header .desktop-header .desktop-header-top .hdt-right-social > a:hover {
+    color: #11b5e6;
+}
+/*-----END CSS DESKTOP-HEADER-TOP-----*/
+
+/*-----START CSS DESKTOP-HEADER-CENTER-----*/
+
+#header .desktop-header .desktop-header-center {
+    padding: 50px 0px;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div > div {
+    padding-left: 45px;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div > img {
+    float: left;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div > div h5 {
+    color: #002e5b;
+    margin: 0px;
+    line-height: 1.4;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div > div a {
+    display: inline-block;
+    color: #002e5b;
+}
+
+#header .desktop-header .desktop-header-center .hd-contact > div > div a:hover {
+    color: #11b5e6;
+    text-decoration: none;
+}
+
+/*-----END CSS DESKTOP-HEADER-CENTER-----*/
+
+/*-----START CSS DESKTOP-HEADER-NAVBAR-----*/
+
+#header .desktop-header .desktop-header-navbar {
+    background: #2c394c;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul {
+    margin: 0px;
+    text-align: center;
+    padding: 0;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li {
+    display: inline-block;
+    margin: 0px;
+    padding: 15px 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > a {
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > a:hover {
+    color: #11b5e6;
+    text-decoration: none;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown {
+    position: relative;
+    z-index: 9999;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul {
+    display: none;
+    list-style: none;
+    animation: slide-up 0.6s;
+    margin: 0px;
+    line-height: normal;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 215px;
+    z-index: 9999;
+    background: #3d4e7d;
+    text-align: left;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown:hover > ul {
+    padding-left: 0;
+    display: inline-block;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li {
+    margin: 0px;
+    position: relative;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > .has-child a .fa-angle-right {
+    vertical-align: -1.5px;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > a {
+    display: block;
+    padding: 15px 0px 15px 10px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.1);
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > a:hover{
+    text-decoration: none;
+    color: #11b5e6;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > ul {
+    display: none;
+    list-style: none;
+    animation: slide-up 0.6s;
+    margin: 0px;
+    line-height: normal;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    width: 200px;
+    padding: 0px;
+    z-index: 9;
+    background: #3d4e7d;
+    text-align: left;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > ul > li {
+    margin: 0px;
+    position: relative;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > ul > li > a {
+    display: block;
+    padding: 15px 0px 15px 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.1);
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > ul > li > a:hover {
+    text-decoration: none;
+    color: #11b5e6;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li:hover > ul {
+    display: inline-block;
+}
+#header .desktop-header .desktop-header-navbar > .container > ul > li > a > i{
+    vertical-align: 0.2em;
+    font-size: 10px;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li.dropdown > ul > li > a .fa-caret-right{
+    color: #11b5e6;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li:last-child {
+    border-right: none;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > .search-bar {
+    position: relative;
+    width: 250px;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > .search-bar input {
+    width: 100%;
+    border-radius: 100px;
+    padding: 8px 40px 8px 10px;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > .search-bar button {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: #2c394c;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+}
+
+#header .desktop-header .desktop-header-navbar > .container > ul > li > .search-bar button:hover {
+    color: #11b5e6;
+}
+
+/*---------------------END CSS HEADER---------------------*/
