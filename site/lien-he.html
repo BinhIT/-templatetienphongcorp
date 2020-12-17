@@ -194,45 +194,18 @@
                                                     </div>
                                                 </div>
                                                 <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                    <div class="form-vertical clearfix">
-                                                        <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
-                                                            <input name="form_type" type="hidden" value="contact">
-                                                            <input name="utf8" type="hidden" value="✓">
-
-
-
-
-
-
-
-
-                                                            <label for="ContactFormName" class="hidden-label">Họ tên của bạn</label>
-                                                            <input type="text" id="ContactFormName" class="input-full" name="contact[name]" placeholder="Họ tên của bạn" autocapitalize="words" value="">
-
-                                                            <label for="ContactFormEmail" class="hidden-label">Địa chỉ email của bạn</label>
-                                                            <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="Địa chỉ email của bạn" autocorrect="off" autocapitalize="off" value="">
-
-
-                                                            <label for="ContactFormPhone" class="hidden-label">Số điện thoại của bạn</label>
-                                                            <input type="tel" id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="Số điện thoại của bạn" pattern="[0-9\-]*" value="">
-
-                                                            <label for="ContactFormMessage" class="hidden-label">Nội dung</label>
-                                                            <textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="Nội dung"></textarea>
-
-                                                            <input type="submit" class="btn right btnContactSubmit" value="Gửi">
-
-
-                                                            <input id="314d2d49055d4a82ae06a0bfe72a45f1" name="g-recaptcha-response" type="hidden" value="03AGdBq25i8u26TwoqjYs0prwzKB6_p0XxIIHfszmwxbkiHrRbaTdYDxngPGTpFtAI1jT5zbHid2irzjagOizjXj6Z37zSrVMAzfPIEoaGi85CCHVhYQI2ZvQ28BrxI9Qp_5n-fbfcRIHf81BylvgFclWAIJ--ZtKpmXIPCHT1kR7P0_VVwHHUBq2i30YTHbphCLzsIV8Toa3t98hU2NbtKA_9HQ5D-0YhdLQyoO6eXugLLOrssvscKlgN1d93HCPsOCkoKKj-218STFWBfPo5XdtkWr3iPbA7VUdqJ_ycCLYrKtTYPNx0YcB8s5nwL1LkGp93NiBZahNVjhPYkt4baCZcttb1KAu5N7pgtCHR_hjOIVxbXdATHGf_8JPUibrGy_X6R8iuyGCXPc7VB1KYjtozmmcmSOPM_uboI0J14G5EJKAssOdeiWZpS_xE6sNBS19vL5aRO_JB-PyPLPfj6dAKjVYKwHaIrw">
-                                                            <script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
-                                                            <script>
-                                                                grecaptcha.ready(function() {
-                                                                    grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {
-                                                                        action: 'submit'
-                                                                    }).then(function(token) {
-                                                                        document.getElementById('314d2d49055d4a82ae06a0bfe72a45f1').value = token;
-                                                                    });
-                                                                });
-                                                            </script>
+                                                    <div class="hcontact-form">
+                                                        <form action="#" method="POST">
+                                                            <label>First Name:</label>
+                                                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                                                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                                                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                                                            <label class="control-label col-sm-2" for="email">Email:</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                            <label class="control-label col-sm-2" for="comment">Comment:</label>
+                                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                            </br>
+                                                            <button type="submit" class="btn ">Submit</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -251,217 +224,147 @@
 
         </main>
     </div>
-    <!-- BEGIN product review -->
-    <div id="product-banquyen" class="product-review hidden">
-        <div class="container">
-            <div class="product-review-ct">
+    <!--END CONTENT -->
 
-            </div>
-        </div>
-    </div>
-    <!-- END product review -->
-    <div id="PageContainer" class="">
-        <main role="main" id="Main">
-            <div class="device-preview">
-                <div class="loader-gif"> </div>
-                <div class="device-preview__container" id="PreviewFrameContainer">
-                    <iframe id="PreviewFrame" class="device-preview__iframe" sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-modals">
-							</iframe>
-
-
-                </div>
-            </div>
-        </main>
-    </div>
-
-    </div>
-
-
-    <script src='//theme.hstatic.net/1000012173/1000661207/14/demo-script.js?v=114' type='text/javascript'></script>
-    <script>
-        window.ThemeStore.config = {
-            spinnerImage: "//theme.hstatic.net/1000012173/1000661207/14/loading.gif?v=114"
-        };
-        $(function() {
-            ThemeStore.init();
-        });
-        $(document).ready(function() {
-            if (view == 'mobile') {
-                $("#MobilePreview").click();
-                //		document.getElementById('PreviewFrame').src = document.getElementById('PreviewFrame').src;
-                $(".device-preview").addClass("active-mobile");
-            }
-        });
-
-        $(document).on('click', 'a#MobilePreview,a#DesktopPreview', function() {
-            if ($(this).attr('data-view') == 'mobile') {
-                $(".device-preview").addClass("active-mobile");
-            } else {
-                $(".device-preview").removeClass("active-mobile");
-
-            }
-            $('.loader-gif').html("<img src='//file.hstatic.net/1000012173/file/page-loading-gif-3.gif'>");
-            $('#PreviewFrame').css({
-                "opacity": "0"
-            });
-            setTimeout(function() {
-                $('#PreviewFrame').attr("src", $('#PreviewFrame').attr("src"));
-                setTimeout(function() {
-                    $('#PreviewFrame').css({
-                        "opacity": "1"
-                    });
-                    $('.loader-gif').html("");
-                }, 600);
-            }, 600);
-        })
-    </script>
-    <style>
-        .device-preview.active-mobile .device-preview__container {
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        }
-    </style>
-</body>
-<!--END CONTENT -->
-
-<!-------START FOOTER------->
-<footer id="footer">
-    <div class="footer-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="ft-contact">
-                        <h3 class="ft-title">Thông tin liên lạc</h3>
-                        <div class="ft-contact-desc">
-                            Các dịch vụ của Suplo được dựa trên hơn 20 năm kinh nghiệm giúp đỡ khách hàng và đối tác trong kinh doanh và quản lý doanh nghiệp.
-                        </div>
-                        <div class="ft-contact-address">
-                            <span class="ft-contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <div class="ft-contact-detail">
-                                Địa chỉ: Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+    <!-------START FOOTER------->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="ft-contact">
+                            <h3 class="ft-title">Thông tin liên lạc</h3>
+                            <div class="ft-contact-desc">
+                                Các dịch vụ của Suplo được dựa trên hơn 20 năm kinh nghiệm giúp đỡ khách hàng và đối tác trong kinh doanh và quản lý doanh nghiệp.
                             </div>
-                        </div>
-                        <div class="ft-contact-tel">
-                            <span class="ft-contact-icon"><i class="fa fa-phone" aria-hidden="true"></i> </span>
-                            <div class="ft-contact-detail">
-                                Số điện thoại:
-                                <a href="tel:(+84) 934 323 882">(+84) 934 323 882</a>
+                            <div class="ft-contact-address">
+                                <span class="ft-contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <div class="ft-contact-detail">
+                                    Địa chỉ: Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+                                </div>
                             </div>
-                        </div>
-                        <div class="ft-contact-email">
-                            <span class="ft-contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            <div class="ft-contact-detail">
-                                Email:
-                                <a href="mailto:support@suplo.vn">support@suplo.vn</a>
+                            <div class="ft-contact-tel">
+                                <span class="ft-contact-icon"><i class="fa fa-phone" aria-hidden="true"></i> </span>
+                                <div class="ft-contact-detail">
+                                    Số điện thoại:
+                                    <a href="tel:(+84) 934 323 882">(+84) 934 323 882</a>
+                                </div>
+                            </div>
+                            <div class="ft-contact-email">
+                                <span class="ft-contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <div class="ft-contact-detail">
+                                    Email:
+                                    <a href="mailto:support@suplo.vn">support@suplo.vn</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="ft-nav">
-                        <h3 class="ft-title">Liên kết nhanh website</h3>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Hệ thống chi nhánh</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Các dịch vụ của Suplo</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Gửi thông tin liên hệ</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Ban giám đốc Suplo</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Lĩnh vực của Suplo</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="ft-nav">
-                        <h3 class="ft-title">
-                            Các dịch vụ của Suplo
-                        </h3>
-                        <ul class="no-bullets">
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Công nghệ tiên phong</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Nội dung số hấp dẫn</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Hoạch định chiến lược</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Vận hành tổ chức</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Quản lý tài chính</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Phát triển vượt bậc</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="ft-subscribe">
-                        <h3 class="ft-title">
-                            Đăng ký nhận tin
-                        </h3>
-                        <div class="ft-subscribe-desc">
-                            Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.
-                        </div>
-                        <div class="ft-sub-wrapper">
-                            <form action="#" method="POST">
-                                <input type="email" placeholder="Nhập địa chỉ email của bạn...">
-                                <button type="submit" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                            </form>
+                    <div class="col-sm-3">
+                        <div class="ft-nav">
+                            <h3 class="ft-title">Liên kết nhanh website</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Hệ thống chi nhánh</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Các dịch vụ của Suplo</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Gửi thông tin liên hệ</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Ban giám đốc Suplo</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Lĩnh vực của Suplo</span></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="ft-social">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <div class="col-sm-3">
+                        <div class="ft-nav">
+                            <h3 class="ft-title">
+                                Các dịch vụ của Suplo
+                            </h3>
+                            <ul class="no-bullets">
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Công nghệ tiên phong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Nội dung số hấp dẫn</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Hoạch định chiến lược</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Vận hành tổ chức</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Quản lý tài chính</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>Phát triển vượt bậc</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="ft-subscribe">
+                            <h3 class="ft-title">
+                                Đăng ký nhận tin
+                            </h3>
+                            <div class="ft-subscribe-desc">
+                                Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.
+                            </div>
+                            <div class="ft-sub-wrapper">
+                                <form action="#" method="POST">
+                                    <input type="email" placeholder="Nhập địa chỉ email của bạn...">
+                                    <button type="submit" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="ft-social">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-copyrights">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="ft-copyrights-content wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                        Copyrights © 2018 by
-                        <a href="#"> Suplo</a>.
-                        <a href="#">Powered by Haravan</a>
+        <div class="footer-copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="ft-copyrights-content wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            Copyrights © 2018 by
+                            <a href="#"> Suplo</a>.
+                            <a href="#">Powered by Haravan</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="ft-copyrights-link text-right">
-                        <ul class="no-bullets">
-                            <li class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.2s; animation-name: fadeInRight;">
-                                <a href="#">Chính sách bảo mật</a>
-                            </li>
-                            <li class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.4s; animation-name: fadeInRight;">
-                                <a href="#">Điều khoản sử dụng</a>
-                            </li>
-                            <li class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.6s; animation-name: fadeInRight;">
-                                <a href="#">Câu hỏi thường gặp</a>
-                            </li>
-                        </ul>
+                    <div class="col-sm-6">
+                        <div class="ft-copyrights-link text-right">
+                            <ul class="no-bullets">
+                                <li class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                                <li class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.4s; animation-name: fadeInRight;">
+                                    <a href="#">Điều khoản sử dụng</a>
+                                </li>
+                                <li class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s" style="visibility: visible; animation-duration: 0.75s; animation-delay: 0.6s; animation-name: fadeInRight;">
+                                    <a href="#">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-------END FOOTER------->
+    </footer>
+    <!-------END FOOTER------->
 
 
 </body>

@@ -1,43 +1,190 @@
-/*-----START CSS BACKDROP-----*/
-
-#backdrop {
-    height: 300px;
-    padding: 30px 0;
-    background: url("../images/gioi-thieu/breadcrumb_bg5.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#backdrop .backdrop-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
-}
-
-#backdrop .backdrop-content .backdrop-big h2 {
-    font-size: 24px;
-    color: #fff;
-    padding: 0px;
-    margin: 0px 0px 5px 0px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-#backdrop .backdrop-content .backdrop-small a,
-#backdrop .backdrop-content .backdrop-small span {
-    color: #fff;
-}
-
-#backdrop .backdrop-content .backdrop-small a:hover {
-    text-decoration: none;
-    color: #11b5e6;
-}
-
-
-/*-----END CSS BACKDROP-----*/
+              @font-face {
+              font-family: "font-main";
+              src: url(../lib/font/GoogleSans-Bold.ttf);
+          }
+          
+          @font-face {
+              font-family: "open-regular";
+              src: url(../lib/font/GoogleSans-Regular.ttf);
+          }
+          
+          h1,
+          h2,
+          h3,
+          h4,
+          h5 {
+              font-family: "font-main";
+          }
+          
+          p {
+              font-family: "font-main";
+          }
+          /*-----START CSS BACKDROP-----*/
+          
+          #backdrop {
+              height: 300px;
+              padding: 30px 0;
+              background: url("../images/gioi-thieu/breadcrumb_bg5.png");
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+          }
+          
+          #backdrop .backdrop-content {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 1;
+              width: 100%;
+          }
+          
+          #backdrop .backdrop-content .backdrop-big h2 {
+              font-size: 24px;
+              color: #fff;
+              padding: 0px;
+              margin: 0px 0px 5px 0px;
+              text-transform: uppercase;
+              font-weight: 700;
+          }
+          
+          #backdrop .backdrop-content .backdrop-small a,
+          #backdrop .backdrop-content .backdrop-small span {
+              color: #fff;
+          }
+          
+          #backdrop .backdrop-content .backdrop-small a:hover {
+              text-decoration: none;
+              color: #11b5e6;
+          }
+          /*-----END CSS BACKDROP-----*/
+          
+          #PageContainer {
+              overflow: hidden;
+          }
+          
+          .main-content {
+              display: block;
+          }
+          
+          .wrapper {
+              *zoom: 1;
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 0 15px;
+          }
+          
+          #page-wrapper {
+              padding: 50px 0px;
+          }
+          
+          .page-wrapper h1 {
+              color: #637281;
+              padding: 0px 0px 15px 0px;
+              margin: 0px 0px 15px 0px;
+              border-bottom: 1px solid #e7e7e7;
+          }
+          
+          #page-wrapper .page-contact-wrapper .page-body {
+              padding: 10px;
+              background: url(//theme.hstatic.net/1000278915/1000357457/14/page-contact-bg.png?v=1960);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+          
+          #page-wrapper .page-contact-wrapper .page-body .page-body-inner {
+              background: #fff;
+              padding: 15px;
+              height: 700px;
+          }
+          
+          #page-wrapper .page-contact-wrapper .page-body h4 {
+              color: #637281;
+              padding: 0px;
+              margin: 0px 0px 5px 0px;
+          }
+          
+          #page-wrapper .page-contact-wrapper .page-body .contact-info,
+          #page-wrapper .page-contact-wrapper .page-body .contact-map,
+          #page-wrapper .page-contact-wrapper .page-body .contact-info {
+              margin-bottom: 15px;
+          }
+          
+          .grid__item {
+              box-sizing: border-box;
+              float: left;
+              min-height: 1px;
+              padding-left: 30px;
+              vertical-align: top;
+              width: 100%;
+          }
+          
+          .grid,
+          .grid--rev,
+          .grid--full,
+          .grid-uniform {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              margin-left: -30px;
+          }
+          
+          .form-vertical {
+              margin-bottom: 15px;
+          }
+          
+          .form-vertical input,
+          .form-vertical select,
+          .form-vertical textarea {
+              display: block;
+              margin-bottom: 10px;
+          }
+          
+          form {
+              display: block;
+              margin-top: 0em;
+          }
+          
+          input,
+          textarea,
+          select {
+              border: 1px solid #e7e7e7;
+              max-width: 100%;
+              padding: 8px 10px;
+              border-radius: 3px;
+          }
+          
+          .btn {
+              background-color: #11b5e6 !important;
+              color: white;
+          }
+          
+          .btn:hover {
+              background: #012d59;
+          }
+          
+          .btn:active,
+          .btn--secondary:active,
+          .btn:focus,
+          .btn--secondary:focus,
+          .rte .btn:active,
+          .rte .btn--secondary:active,
+          .rte .btn:focus,
+          .rte .btn--secondary:focus {
+              background-color: #0a6a87;
+              color: #fff;
+          }
+          
+          @media only screen and (min-width: 769px) {}
+          
+          .large--one-half {
+              width: 50%;
+          }
+          
+          @media only screen and (max-width: 480px) {
+              .small--one-whole {
+                  width: 100%;
+              }
