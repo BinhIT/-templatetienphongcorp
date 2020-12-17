@@ -220,7 +220,7 @@
         text-align: center;
     }
 }
-/*-----RESPONSIVE IPHONE*/
+/*-----RESPONSIVE IPHONE---*/
 @media only screen and (max-width: 480px){
     #footer .footer-content .container .row .col-sm-3 {
         flex: 0 0 100%;
