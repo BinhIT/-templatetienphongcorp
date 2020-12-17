@@ -231,8 +231,8 @@
     line-height: 1.2;
 }
 
-.cd-horizontal-timeline .events-content div row .col-sm-6 img {
-    width: 100%;
+.cd-horizontal-timeline .events-content .selected div row col-sm-6 img{
+    width: 100% !important;
 }
 
 .cd-horizontal-timeline .events-content li{
@@ -280,8 +280,55 @@
     color: #012d59;
     font-weight: 800;
 }
+#pau-leaders .container .row .col-sm-6 .staff-img img{
+    width: 100%;
+}
 
 /*---END CSS SECTION 3---*/
 
 /*---------------------END CSS CONTAINER---------------------*/
 
+/*---------------------START CSS RESPONSIVE CONTAINER---------------------*/
+/*-----RESPONSIVE IPAD PRO*/
+@media only screen and (max-width: 1024px) {
+    .cd-horizontal-timeline .events-content li {
+        padding: 0 120px 0 100px;
+    }
+}
+
+/*-----RESPONSIVE IPAD*/
+@media only screen and (max-width: 768px){
+    .cd-horizontal-timeline .events-content li {
+        padding: 0 40px 0 0;
+    }
+    #pau-leaders .container .row .col-sm-6 .staff-wrapper .row{
+        display: grid;
+    }
+    #pau-leaders .container .row .col-sm-6{
+        flex: 0 0 100%;
+        max-width: 33%;
+        padding: 0 9px 0 15.5px;
+    }
+    #pau-leaders .container .row .col-sm-6 .staff-img img,
+    #pau-leaders .container .row .col-sm-6 p {
+        width: 400%;
+    }
+    #pau-leaders .container .row .col-sm-6 .staff-name {
+        margin-top: 15px;
+    }
+}
+/*-----RESPONSIVE IPHONE*/
+@media only screen and (max-width: 480px){
+    #pau-leaders .container .row .col-sm-6 .staff-img img, #pau-leaders .container .row .col-sm-6 p {
+        width: 205%;
+    }
+    #pau-leaders .container .row .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #pau-leaders .container .row .col-sm-6 .staff-img img, #pau-leaders .container .row .col-sm-6 p {
+        width: 100% !important;
+    }
+}
+
+/*---------------------END CSS RESPONSIVE CONTAINER---------------------*/

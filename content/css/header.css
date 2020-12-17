@@ -37,6 +37,9 @@ h6 {
 
 /*CSS DESKTOP-HEADER-TOP*/
 
+#header .mobile-header{
+    display: none;
+}
 #header .desktop-header .desktop-header-top {
     background: #2c394c;
     display: flow-root;
@@ -268,3 +271,29 @@ h6 {
 }
 
 /*---------------------END CSS HEADER---------------------*/
+/*---------------------START CSS RESPONSIVE HEADER---------------------*/
+/*-----RESPONSIVE IPAD PRO*/
+@media (min-width: 1024px) {
+    #header .desktop-header .desktop-header-center .hd-contact > div:last-child{
+        margin-right: 8px;
+    }
+}
+/*-----RESPONSIVE IPAD*/
+@media only screen and (max-width: 768px) {
+    .medium--hide {
+        display: none !important;
+    }
+    #header .mobile-header {
+        display: block;
+        background: #ffffff;
+        padding: 30px 0px;
+    }
+    #header .mobile-header .hd-btnMenu > a {
+        padding: 0px;
+        color: #637281;
+        text-transform: uppercase !important;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+/*---------------------END CSS RESPONSIVE HEADER---------------------*/

@@ -141,6 +141,10 @@
     margin-bottom: 15px;
 }
 
+#footer .footer-copyrights .container .col-none{
+    display: none;
+}
+
 /*---END FOOTER CONTENT---*/
 
 /*---START FOOTER COPYRIGHTS---*/
@@ -188,3 +192,42 @@
 /*---END FOOTER COPYRIGHTS---*/
 
 /*---------------------END CSS FOOTER---------------------*/
+/*---------------------START CSS RESPONSIVE FOOTER---------------------*/
+/*-----RESPONSIVE IPAD PRO*/
+@media only screen and (max-width: 1024px) {
+    #footer .footer-content .ft-subscribe .ft-sub-wrapper form button {
+        top: 60.6%;
+    }
+}
+
+/*-----RESPONSIVE IPAD*/
+@media only screen and (max-width: 768px) {
+    #footer .footer-content .container .row .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    #footer .footer-content .ft-subscribe .ft-sub-wrapper form button{
+        top: 47.5%;
+    }
+    #footer .footer-copyrights .container .col-block{
+        display: none;
+    }
+    #footer .footer-copyrights .container .col-none{
+        display: block;
+    }
+    #footer .footer-copyrights .container .col-none .ft-copyrights-link,
+    #footer .footer-copyrights .container .col-none .ft-copyrights-content{
+        text-align: center;
+    }
+}
+/*-----RESPONSIVE IPHONE*/
+@media only screen and (max-width: 480px){
+    #footer .footer-content .container .row .col-sm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #footer .footer-content .ft-subscribe .ft-sub-wrapper form button {
+        top: 63.5%;
+    }
+}
+/*---------------------END CSS RESPONSIVE FOOTER---------------------*/
