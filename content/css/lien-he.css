@@ -1,0 +1,43 @@
+/*-----START CSS BACKDROP-----*/
+
+#backdrop {
+    height: 300px;
+    padding: 30px 0;
+    background: url("../images/gioi-thieu/breadcrumb_bg5.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#backdrop .backdrop-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+}
+
+#backdrop .backdrop-content .backdrop-big h2 {
+    font-size: 24px;
+    color: #fff;
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#backdrop .backdrop-content .backdrop-small a,
+#backdrop .backdrop-content .backdrop-small span {
+    color: #fff;
+}
+
+#backdrop .backdrop-content .backdrop-small a:hover {
+    text-decoration: none;
+    color: #11b5e6;
+}
+
+
+/*-----END CSS BACKDROP-----*/
